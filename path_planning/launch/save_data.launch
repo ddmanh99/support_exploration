@@ -1,0 +1,12 @@
+<launch>
+    <!-- Khởi chạy node từ file save_data.py -->
+    <node
+        name="save_data_node"
+        pkg="path_planning"
+        type="script/save_data.py"
+        output="screen"
+        launch-prefix="python3"
+        cwd="node">
+        <param name="rate" value="10" /> <!-- Optional: set any parameter you want -->
+    </node>
+</launch>
